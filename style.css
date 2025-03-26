@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+
+body{
+    text-align: center;
+    background-image: url('./imagens/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;  
+    margin-top: 7%;
+    padding: 20px;
+    position: relative;
+}
+
+.pokedex{
+    width: 80%;
+    max-width: 425px;
+}
+
+.pokemon_img{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%); /*modifica a posição da imagem*/
+    height: 16%;
+}
+
+.pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: rgb(145, 145, 145);
+    top: 54.5%;
+    right: 32%;
+    font-size: clamp(2px, 4vw, 21px); /*Essa função recebe um valor minimo,padrão e maximo, conforme a mudança de telas*/
+}
+
+.pokemon_nome{
+    color: rgb(116, 116, 116);
+    text-transform: capitalize; /*Deixa a primeira letra maiuscula*/
+}
+
+.form{
+    position: absolute;
+    width: 53%;
+    top: 65%;
+    left: 20%;
+}
+
+.input_search{
+    width: 100%;
+    padding: 3%;
+    outline: none; /*retira a borda*/
+    border: 3px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(5px, 1vw, 14.5px);
+    box-shadow: -3px 7px 0 rgb(83, 83, 83);
+}
+
+.botoes{
+    position: absolute;
+    bottom: 10%;
+    width: 53%;
+    left: 52%;
+    transform: translate(-59%, 0);
+    display: flex;
+    gap: 8%; /*tamanho do espaçamento que divide a linha*/
+}
+
+.botao{
+    width: 50%;
+    padding: 3%;
+    border: 3px solid rgb(20, 20, 20);
+    font-size: clamp(7px, 1vw, 15px);
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    box-shadow: -2px 3px 0 black;
+}
+
+.botao:active{
+    box-shadow: inset -2px 4px 0 black;
+    font-size: 0.8rem; /*1rem é igual ao tamanho da fonte do elemento raiz*/
+}
